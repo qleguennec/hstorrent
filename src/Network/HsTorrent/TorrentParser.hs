@@ -10,7 +10,7 @@
 -- Module      :  Network.HsTorrent.TorrentParser
 -- Copyright   :  AUTHORS
 -- License     :  BSD3
--- Maintainer  :  https://github.com/hstorrent
+-- Maintainer  :  Quentin Le Guennec <quentin.leguennec1@gmail.com>
 -- Stability   :  experimental
 -- Portability :  portable
 --
@@ -59,7 +59,7 @@ data File = File
   } deriving (Show, Eq, Typeable, Generic)
 
 
--- | Parse contents of a .torrent file.
+-- | Parse contents of a .torrent file
 parseTorrentMetaInfo :: B.ByteString -> Result TorrentMetaInfo
 parseTorrentMetaInfo = decode
 
